@@ -1,8 +1,11 @@
 /**
  * Created by ASUS on 4/9/2017.
+ * Annisa Larasati / 1401947
+ * Penddiikan Ilmu Komputer A
  */
 public class Barang {
     int id_barang;
+    int id_supplier;
     String nama_barang;
     String jenis;
     int jumlah;
@@ -13,8 +16,10 @@ public class Barang {
     int upjumlah;
     int idUp;
 
-    public Barang(int id_barang,String nama_barang, String jenis, int jumlah, int harga_suplier, int harga_jual){
+
+    public Barang(int id_barang, int id_Supplier,String nama_barang, String jenis, int jumlah, int harga_suplier, int harga_jual){
         this.id_barang = id_barang;
+        this.id_supplier = id_Supplier;
         this.nama_barang = nama_barang;
         this.jenis = jenis;
         this.jumlah = jumlah;
@@ -39,6 +44,7 @@ public class Barang {
 
     public void print(){
         System.out.println("Id barang :"+id_barang);
+        System.out.println("Id supplier :"+id_supplier);
         System.out.println("Nama Barang :"+nama_barang);
         System.out.println("Jenis Barang :"+jenis);
         System.out.println("Jumlah Barang :"+jumlah);
@@ -47,7 +53,7 @@ public class Barang {
     }
 
     public static void main(String[] args){
-        Barang brg = new Barang(1,"indomie","mie",50, 2300, 2500);
+        Barang brg = new Barang(1,1,"indomie","mie",50, 2300, 2500);
         brg.upHargaBarang(1,2500, 2800);
         System.out.println("==Testing print isi==");
         brg.print();
