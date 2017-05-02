@@ -8,12 +8,24 @@ public class Karyawan {
     //private Hashmap<Integer, Barang> arrBarang = new Hashmap<>();
     public double hitungGaji(){ return 0; }
 
+    public double totalgaji(){
+        double total=0;
+        for(Karyawan k:arrKaryawan){
+            total=total+k.hitungGaji();
+        }
+        return total;
+    }
+
     public void print(){
         System.out.println("-------Daftar Pegawai-------");
+        int i=0;
         for(Karyawan k : arrKaryawan){
+            i=i+1;
+            System.out.println("id karyawan : "+i);
             k.print();
             System.out.println("");
         }
+        System.out.println("total gaji : "+totalgaji());
     }
 
 /* //karena kelas barang belum ada :v
