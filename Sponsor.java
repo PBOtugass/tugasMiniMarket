@@ -6,7 +6,6 @@ public class Sponsor extends Supplier {
     String nama;
     String alamat;
     String no_kontak;
-    static double diskonEvent=10;
     double totaldiskon;
 
     public Sponsor(int id_sponsor,String nama, String alamat,String no_kontak){
