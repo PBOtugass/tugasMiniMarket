@@ -3,6 +3,10 @@ import java.util.ArrayList;
  * Created by ASUS on 5/2/2017.
  */
 public class Karyawan {
+    int id_karyawan;
+    String nama;
+    String alamat;
+    String no_kontak;
     ArrayList<Karyawan> arrKaryawan = new ArrayList<>();
     //private Hashmap<Integer, Barang> arrBarang = new Hashmap<>();
     public double hitungGaji(){ return 0; }
