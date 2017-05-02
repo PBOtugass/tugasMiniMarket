@@ -3,6 +3,7 @@ import java.util.ArrayList;
  * Created by ASUS on 5/2/2017.
  */
 public class Supplier {
+    static double diskonEvent=10;
     ArrayList<Supplier> arrSupplier = new ArrayList<>();
     public double hitungDiskon(){ return 0; }
 
